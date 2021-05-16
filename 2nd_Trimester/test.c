@@ -1,4 +1,5 @@
-main()
+#include<stdio.h>
+int main()
 {
     char i,j,p;
     //printf("p");

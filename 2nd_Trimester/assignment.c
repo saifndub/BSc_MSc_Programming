@@ -1,11 +1,13 @@
-main()
+#include<stdio.h>
+int Conjunction();
+int main()
 {
     int a;
     char i, j;
-    printf("Please choose the option for truth table for two propotion : \n\n");
+    printf("Please choose the option for truth table for two propotion : \n");
     printf("1. Conjunction\n2. Disjunction\n3. Implication\n4. Exclusive OR\n5. Biconditional\n\n");
+    printf("Enter number of proposition name : ");
     scanf("%d", &a);
-    printf("Enter proposition name : ");
 
     switch (a)
     {
@@ -14,7 +16,7 @@ main()
         printf(" %c %c\n", i, j);
         Conjunction(); //printf("You chose One");
         break;
-        
+
     case 2:
         printf("You chose Two");
         break;
@@ -37,7 +39,7 @@ main()
     }
 }
 
-Conjunction()
+int Conjunction()
 {
     char i, j;
     // scanf("%c",&x,&y );
