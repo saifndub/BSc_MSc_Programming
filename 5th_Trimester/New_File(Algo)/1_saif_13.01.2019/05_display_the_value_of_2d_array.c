@@ -1,11 +1,13 @@
 //take the value into 2d array and display the value of 2d array
+
+#include <stdio.h>
 int main()
 {
     int disp[2][3];
     int i, j;
-    for(i=0; i<2; i++)
+    for (i = 0; i < 2; i++)
     {
-        for(j=0; j<3; j++)
+        for (j = 0; j < 3; j++)
         {
             printf("Enter value for disp[%d][%d]:", i, j);
             scanf("%d", &disp[i][j]);
@@ -13,12 +15,12 @@ int main()
     }
 
     printf("\n\nTwo Dimensional array elements:\n");
-    for(i=0; i<2; i++)
+    for (i = 0; i < 2; i++)
     {
-        for(j=0; j<3; j++)
+        for (j = 0; j < 3; j++)
         {
             printf("%2d ", disp[i][j]);
-            if(j==2)
+            if (j == 2)
             {
                 printf("\n");
             }

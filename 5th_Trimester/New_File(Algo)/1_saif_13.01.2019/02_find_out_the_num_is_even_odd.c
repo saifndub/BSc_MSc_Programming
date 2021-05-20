@@ -1,5 +1,5 @@
 //find out the number is even_odd
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     int num;
@@ -7,7 +7,7 @@ int main()
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    if(num % 2 == 0)
+    if (num % 2 == 0)
         printf("%d is even number.", num);
     else
         printf("%d is odd number.", num);
