@@ -12,15 +12,15 @@ int main()
     for (k = 0; k < n; k++)
         scanf("%d", &array[k]);
 
-    for (k = 0 ; k < n - 1; k++)
+    for (k = 0; k < n - 1; k++)
     {
-        for (ptr = 0 ; ptr < n - k - 1; ptr++)
+        for (ptr = 0; ptr < n - k - 1; ptr++)
         {
-            if (array[ptr] > array[ptr+1])
+            if (array[ptr] > array[ptr + 1])
             {
-                swap         = array[ptr];
-                array[ptr]   = array[ptr+1];
-                array[ptr+1] = swap;
+                swap = array[ptr];
+                array[ptr] = array[ptr + 1];
+                array[ptr + 1] = swap;
             }
         }
     }

@@ -12,11 +12,11 @@ int main()
     for (k = 0; k < n; k++)
         scanf("%d", &array[k]);
 
-    for (k = 0 ; k < n - 1; k++)
+    for (k = 0; k < n - 1; k++)
     {
         min = array[k];
         LOC = k;
-        for (j = k+1 ; j < n; j++)
+        for (j = k + 1; j < n; j++)
         {
             if (min > array[j])
             {
@@ -24,8 +24,8 @@ int main()
                 LOC = j;
             }
         }
-        temp       = array[k];
-        array[k]   = array[LOC];
+        temp = array[k];
+        array[k] = array[LOC];
         array[LOC] = temp;
     }
 

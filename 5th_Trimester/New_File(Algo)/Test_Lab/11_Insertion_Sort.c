@@ -12,18 +12,17 @@ int main()
     for (k = 1; k <= n; k++)
         scanf("%d", &array[k]);
 
-        array[0] = -99999999;
+    array[0] = -99999999;
 
-    for (k = 2 ; k <= n ; k++)
+    for (k = 2; k <= n; k++)
     {
         temp = array[k];
 
-
-        for (  ptr = k-1; temp < array[ptr]; ptr = ptr-1)
+        for (ptr = k - 1; temp < array[ptr]; ptr = ptr - 1)
         {
-          array[ptr+1] = array[ptr];
+            array[ptr + 1] = array[ptr];
         }
-        array[ptr+1] = temp;
+        array[ptr + 1] = temp;
     }
 
     printf("Sorted list in ascending order:\n");

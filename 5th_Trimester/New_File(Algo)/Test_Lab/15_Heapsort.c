@@ -4,48 +4,46 @@
 int a[20], i, n, heap_size;
 void max_heap()
 {
-    heap_size=n; //a.length=n
-    for(i=n/2; i>=1; i--)
+    heap_size = n; //a.length=n
+    for (i = n / 2; i >= 1; i--)
     {
         max_heapify(i);
     }
 }
 void max_heapify(int j)
 {
-    int l=2*j;
-    int r=2*j+1;
-    int largest=j;
+    int l = 2 * j;
+    int r = 2 * j + 1;
+    int largest = j;
     int e;
-    if(l<=heap_size&&a[l]>a[largest])
+    if (l <= heap_size && a[l] > a[largest])
     {
-        largest=l;
+        largest = l;
     }
-    if(r<=heap_size&&a[r]>a[largest])
+    if (r <= heap_size && a[r] > a[largest])
     {
-        largest=r;
+        largest = r;
     }
-    if(largest!=j)
+    if (largest != j)
     {
-        e=a[j];
-        a[j]=a[largest];
-        a[largest]=e;
+        e = a[j];
+        a[j] = a[largest];
+        a[largest] = e;
         max_heapify(largest);
     }
-
 }
 void heapsort()
 {
     int c;
-    heap_size=n;
+    heap_size = n;
     max_heap();
 
-
-    for(i=n; i>=2; i--)
+    for (i = n; i >= 2; i--)
     {
-        c=a[i];
-        a[i]=a[1];
-        a[1]=c;
-        heap_size=heap_size-1;
+        c = a[i];
+        a[i] = a[1];
+        a[1] = c;
+        heap_size = heap_size - 1;
         max_heapify(1);
     }
 }
@@ -53,19 +51,19 @@ main()
 {
     int p, q;
     printf("array size:");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("Insert values: ");
     printf("\n");
-    for(p=1; p<=n; p++)
+    for (p = 1; p <= n; p++)
     {
-        scanf("%d",&a[p]);
+        scanf("%d", &a[p]);
     }
     printf("\n");
     heapsort();
     printf("Sorted array :\n");
-    for(q=1; q<=n; q++)
+    for (q = 1; q <= n; q++)
     {
-        printf("%d\t",a[q]);
+        printf("%d\t", a[q]);
     }
     printf("\n");
 }

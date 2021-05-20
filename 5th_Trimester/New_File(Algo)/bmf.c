@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int a[10000][10000], w[10000][10000], dist[10000], prev[10000];
 int vertex, edge;
 
 int min(int i, int j)
 {
-    if(i<j)
+    if (i < j)
         return i;
     else
         return j;
@@ -15,8 +14,7 @@ int min(int i, int j)
 
 void update(int i, int j)
 {
-    dist[j] = min(dist[j], dist[i]+w[i][j]);
-
+    dist[j] = min(dist[j], dist[i] + w[i][j]);
 }
 
 int main()
@@ -29,43 +27,41 @@ int main()
 
     printf("Enter total edge: \n");
     scanf("%d", &edge);
-    for(i=0; i<vertex; i++)
+    for (i = 0; i < vertex; i++)
     {
-        dist[i]=999999;
+        dist[i] = 999999;
     }
 
-    for(i=1; i<vertex; i++)
+    for (i = 1; i < vertex; i++)
     {
-        for(j=1; j<vertex; j++)
+        for (j = 1; j < vertex; j++)
         {
-            a[i][j]=0;
+            a[i][j] = 0;
         }
     }
     printf("Enter edges and weight: \n");
-    for(int i = 1; i<= edge; i++)
+    for (int i = 1; i <= edge; i++)
     {
         scanf("%d %d %d", &m, &n, &w8);
 
         a[m][n] = w8;
-
-
     }
 
     dist[1] = 0;
 
-    for(int i = 1; i<vertex; i++)
+    for (int i = 1; i < vertex; i++)
     {
-        for(int j = 1; j<=vertex; j++)
+        for (int j = 1; j <= vertex; j++)
         {
-            for(int k = 1; k<= vertex; k++)
+            for (int k = 1; k <= vertex; k++)
             {
-                if(a[j][k]!=0)
+                if (a[j][k] != 0)
                     update(j, k);
             }
         }
     }
 
-    for(int i = 1; i<= vertex; i++)
+    for (int i = 1; i <= vertex; i++)
     {
         printf("Dist(%d) = %d\n", i, dist[i]);
     }
