@@ -3,7 +3,7 @@ int adj[50][50],visit[50];
 int edge,node;
 int i,j,n1,n2,s;
 
-dfs(int i)
+void dfs(int i)
 {
     //int i;
     visit[i]=1;

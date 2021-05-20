@@ -48,7 +48,7 @@ void heapsort()
         max_heapify(1);
     }
 }
-main()
+int main()
 {
     int p, q;
     printf("array size:");

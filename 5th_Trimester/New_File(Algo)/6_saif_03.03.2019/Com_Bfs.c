@@ -1,6 +1,6 @@
 # include<stdio.h>
 int a[20][20],q[20]= {0},visited[20],count[20],v,n,i,j,f=0,r=-1;
-void bfs(v)
+void bfs(int v)
 {
     if(visited[v]==0)
     {
@@ -24,11 +24,11 @@ void bfs(v)
 
     }
 }
-main()
+int main()
 {
     //freopen("Saif.txt","r",stdin);
 
-    printf("\n\n Enter the number of nodes:");
+    printf("Enter the number of nodes:");
     scanf("%d",&n);
     printf("\n Enter graph data in matrix form:\n");
     for(i=0; i<n; i++)
