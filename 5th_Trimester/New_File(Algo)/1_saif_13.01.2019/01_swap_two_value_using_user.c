@@ -1,7 +1,7 @@
 //swap two value using user
 #include<stdio.h>
 
-main()
+int main()
 {
     int i,j,swap;
     printf("Enter two value :");
@@ -11,5 +11,5 @@ main()
     i = j;
     j = swap;
 
-    printf("\n\nAfter swap :I=%d ,J=%d",i,j);
+    printf("\n\nAfter swap :I=%d ,J=%d\n\n",i,j);
 }

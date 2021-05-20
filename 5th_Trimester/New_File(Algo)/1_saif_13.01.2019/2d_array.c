@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main(){
     //net
    /* 2D array declaration*/
