@@ -1,0 +1,57 @@
+create table studentinfo
+(
+id char(10),
+dist char(10),
+thana char(10),
+mobile char(10)
+);
+
+insert into studentinfo values('1','D','Dhanmondi','111');
+insert into studentinfo values('11','dha','Mohakhali','222');
+insert into studentinfo values('2','Dhaka','Motijheel','333');
+insert into studentinfo values('22','raj','Aasdd','444');
+insert into studentinfo values('3','Rajshahi','asdfa','555');
+
+insert into studentinfo values('33','Ra','avcz','5566');
+
+PreparedStatement myPS = myConnect.prepareStatement(
+"insert into studentinfo(id,dist,thana,mobile) values('"+txtInsertId.getText()+"','"+txtInsertDistrict.getText()+"','"+txtInsertThana.getText()+"','"+txtInsertMobile.getText()+"')");
+
+create table account_info
+(
+acc_id char(10),
+amount char(10),
+payment char(10)
+);
+
+insert into account_info values('a-101','1000','100');
+insert into account_info values('a-121','2000','200');
+insert into account_info values('a-131','3000','300');
+insert into account_info values('a-141','4000','400');
+
+create table balance
+(
+id char(10),
+name char(10),
+acc_id char(10)
+);
+
+insert into balance values('1','Rahim','a-101');
+insert into balance values('11','Karim','a-121');
+insert into balance values('2','Hasan','a-131');
+insert into balance values('22','Arif','a-141');
+
+
+select studentinfo.id,balance.name,account_info.payment from studentinfo join balance on studentinfo.id = balance.id join account_info on balance.acc_id = account_info.acc_id where studentinfo.id = '1';
+
+insert into account_info values('a-133','400','140');
+insert into balance values('33','Asif','a-133');
+
+commit
+/
+
+
+delete from studentinfo where studentinfo.id='"	+txtInsertId.getText()+	  "'"
+
+
+update studentinfo set dist= '' where id = ''

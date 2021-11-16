@@ -1,0 +1,25 @@
+create table studentinfo
+(
+id char(10),
+dist char(10),
+thana char(10),
+mobile char(10)
+);
+
+insert into studentinfo values('1','D','Dhanmondi','111');
+insert into studentinfo values('11','dha','Mohakhali','222');
+insert into studentinfo values('2','Dhaka','Motijheel','333');
+insert into studentinfo values('22','raj','Aasdd','444');
+insert into studentinfo values('3','Rajshahi','asdfa','555');
+
+insert into studentinfo values('33','Ra','avcz','5566');
+
+PreparedStatement myPS = myConnect.prepareStatement(
+"insert into studentinfo(id,dist,thana,mobile) values('"+txtInsertId.getText()+"','"+txtInsertDistrict.getText()+"','"+txtInsertThana.getText()+"','"+txtInsertMobile.getText()+"')");
+
+
+
+
+
+
+
