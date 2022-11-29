@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#8CA370"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:textColor="#151414"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="113dp"
+        android:layout_height="49dp"
+        android:onClick="onstart"
+        android:text="@string/start"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#CDDC39"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#8BC34A"
+        android:onClick="onstop"
+        android:paddingBottom="12dp"
+        android:text="@string/stop"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="374dp" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="106dp"
+        android:layout_height="49dp"
+        android:background="#AFBAAF"
+        android:onClick="onreset"
+        android:text="@string/reset"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="225dp" />
+
+
+    <TextView
+        android:id="@+id/timer1"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/my_app"
+        android:textColor="#151414"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="150dp" />
+
+
+
+</LinearLayout>

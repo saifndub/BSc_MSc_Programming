@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MySpinner</string>
+    <string name="button_name">Go</string>
+
+    <string-array name="item_names">
+        <item>Samsung</item>
+        <item>Oneplus</item>
+        <item>Apple</item>
+        <item>Nokia</item>
+        <item>Huawei</item>
+        <item>Xiaomi</item>
+    </string-array>
+</resources>

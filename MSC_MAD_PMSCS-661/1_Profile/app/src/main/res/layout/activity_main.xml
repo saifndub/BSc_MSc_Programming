@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/llParents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rlBodySpaceF"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="6">
+            <LinearLayout
+                android:id="@+id/llParentsgttt"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/llParentsgttt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgUserImage"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/imgCompanyLogo"
+                        android:background="@drawable/saif" />
+
+                    <LinearLayout
+
+                        android:id="@+id/llParentsgttt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txtEmpName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@+id/imgCompanyLogo"
+                            android:text="Md Saif Hossain"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtEmpDesignation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtEmpName"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@+id/imgCompanyLogo"
+                            android:text="Jr. Executive MIS"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:id="@+id/txtEmpDepartment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtEmpDesignation"
+
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="25dp"
+
+                            android:layout_toRightOf="@+id/imgCompanyLogo"
+                            android:text="01770506875"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtEmpDepartment1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtEmpDesignation"
+
+                            android:layout_marginStart="25dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@+id/imgCompanyLogo"
+                            android:text="saif.ndub@gmail.com"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:id="@+id/llParentsgttt111"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/dial"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/dial" />
+                            <ImageView
+                                android:id="@+id/facebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/facebook" />
+
+                            <ImageView
+                                android:id="@+id/twtter"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/twtt" />
+
+                            <ImageView
+                                android:id="@+id/email"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/email" />
+
+                            <ImageView
+                                android:id="@+id/linkedin"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/linkedin_" />
+
+                            <ImageView
+                                android:id="@+id/youtube"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+
+                                android:background="@drawable/youtube" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/New"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="20"
+                    android:text="Internation Consumer Product Bangladesh
+
+Limited"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderSpace"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="6"
+            android:background="@drawable/icp"></RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderSpace1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:baselineAligned="false">
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
