@@ -1,0 +1,82 @@
+0_BasicProgramming/*.exe
+0_BasicProgramming/*.o
+
+#This is for 0_BasicGraphicsProgram
+0_BasicGraphicsProgram/*
+!0_BasicGraphicsProgram/*.c
+!0_BasicGraphicsProgram/*.cbp
+
+#This is for 1_DDA_LineDrawingAlgorithm
+1_DDA_LineDrawingAlgorithm/*
+!1_DDA_LineDrawingAlgorithm/*.c
+!1_DDA_LineDrawingAlgorithm/*.cbp
+
+#This is for 2_BresenhamLineDrawing Algorithm
+2_BresenhamLineDrawing/*
+!2_BresenhamLineDrawing/*.c
+!2_BresenhamLineDrawing/*.cbp
+
+#This is for 3_MidPointLineDrawing Algorithm
+3_MidPointLineDrawing/*
+!3_MidPointLineDrawing/*.c
+!3_MidPointLineDrawing/*.cbp
+
+#This is for 4_MidPointCircleDrawing Algorithm
+4_MidPointCircleDrawing/*
+!4_MidPointCircleDrawing/*.c
+!4_MidPointCircleDrawing/*.cbp
+
+#This is for 5_MidPointEllipseGeneration Algorithm
+5_MidPointEllipseGeneration/*
+!5_MidPointEllipseGeneration/*.c
+!5_MidPointEllipseGeneration/*.cbp
+
+#This is for 6_CohenSutherlandLineClipping
+6_CohenSutherlandLineClipping/*
+!6_CohenSutherlandLineClipping/*.cpp
+!6_CohenSutherlandLineClipping/*.cbp
+
+#This is for 7_K&M_Myself
+7_K&M_Myself/*
+!7_K&M_Myself/*.cpp
+!7_K&M_Myself/*.cbp
+
+#This is for 7_Keyboard_Mouse
+7_Keyboard_Mouse/*
+!7_Keyboard_Mouse/*.cpp
+!7_Keyboard_Mouse/*.cbp
+
+#This is for 8_BoundaryFill_4Connected
+8_BoundaryFill_4Connected/*
+!8_BoundaryFill_4Connected/*.cpp
+!8_BoundaryFill_4Connected/*.cbp
+
+#This is for 8_BoundaryFill_8Connected
+8_BoundaryFill_8Connected/*
+!8_BoundaryFill_8Connected/*.cpp
+!8_BoundaryFill_8Connected/*.cbp
+
+#This is for Project
+Final_Project_Cricket/*
+!Final_Project_Cricket/*.c
+!Final_Project_Cricket/*.cbp
+
+#This is for PolygonFillingProject
+PolygonFillingProject/*
+!PolygonFillingProject/*.cpp
+!PolygonFillingProject/*.cbp
+
+PolygonDrawing/*
+!PolygonDrawing/*.c
+!PolygonDrawing/*.cbp
+
+Trial_1_Polygon/*
+!Trial_1_Polygon/*.c
+!Trial_1_Polygon/*.cbp
+
+Trial_2_Polygon/*
+!Trial_2_Polygon/*.c
+!Trial_2_Polygon/*.cbp
+
+polygon or triangle fan.txt
+polygon.txt
